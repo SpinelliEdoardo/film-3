@@ -1,0 +1,47 @@
+.profile-foto-picker {
+  width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+:root {
+  --swiper-theme-color: #fff;
+  --swiper-navigation-size: 36px;
+}
+.navigation-arrow:hover {
+  background-color: #0296E5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-foto-picker .swiper-wrapper {
+  padding: 13px 0;
+}
+
+.profile-foto-picker .swiper-slide {
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.profile-foto-picker .swiper-slide:hover {
+  -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+  z-index: 1;
+}
+
+.profile-foto-picker .swiper-slide:first-child:hover {
+  margin: 0 40px;
+}
+
+.profile-foto-picker .swiper-slide:last-child:hover {
+  margin: 0 -40px;
+}
+/*# sourceMappingURL=styles.css.map */
