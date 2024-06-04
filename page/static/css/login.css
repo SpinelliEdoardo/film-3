@@ -1,0 +1,187 @@
+.main-container {
+    max-width: 85%; /*319px*/
+    min-height: 100vh;
+
+    flex-direction: column;
+}
+
+
+body {
+    background-image: url(../images/Movies-background.png);
+}
+
+
+.material-icons {
+    color: #67686D;
+    /*color: #fff;*/
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    box-shadow: inset 0 0 20px 20px #3A3F47;
+}
+
+
+/*PAGE LOADER*/
+.page-loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*HEADER*/
+.header {
+    /*position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 35px;
+    max-width: 100%;*/
+    margin-top: 25px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    
+    color: #ECECEC;
+}
+
+
+
+/*FORM REGISTRAZIONE*/
+.login-form {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+
+    flex-grow: 1;
+}
+
+.dataField-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.data-field {
+   margin-bottom: 15px;
+
+   flex-direction: column;
+   align-items: center;
+}
+
+.data-field-input {
+    border-radius: 16px;
+    border: none;
+    outline: none;
+
+    background-color: #3A3F47;
+    color: #fff;
+    font-size: 14px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+
+    width: 110px;
+    height: 30px;
+    animation-name: inputSelectedOut;
+    animation-duration: 1s;
+}
+.data-field-input:hover {
+    width: 180px;
+    border: 1px solid #0296E5;
+
+    animation-name: inputSelectedIn;
+    animation-duration: 1s;
+}
+.data-field-input.selected {
+    width: 180px;
+    border: 1px solid #0296E5;
+
+    animation-name: inputSelectedIn;
+    animation-duration: 1s;
+}
+
+.data-field-error {
+    display: none;
+    text-align: center;
+
+    color: #FF0000;
+
+    font-size: 12px;
+    margin-top: 1px;
+}
+.data-field-error.active {
+    display: block;
+}
+
+
+@keyframes inputSelectedIn {
+    from {width: 110px;}
+    to {width: 180px;}
+}
+@keyframes inputSelectedOut {
+    from {width: 180px;}
+    to {width: 110px;}
+}
+
+.password-field {
+    margin-bottom: 15px;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-visibility-button {
+    right: 5px;
+    top: calc(50% - 12px);
+
+    display: none;
+}
+
+.confirm-button {
+    border-radius: 16px;
+    border: none;
+    outline: none;
+
+    background-color: #0296E5;
+    color: #fff;
+    font-size: 16px;
+
+    padding: 8px;
+    width: 120px;
+}
+/*.confirm-button:hover {
+    background-color: #0279B3;
+}*/
+
+
+.forgot-password {
+    font-size: 12px;
+    margin-bottom: 8px;
+
+    align-self: flex-end;
+}
+
+
+.signUp-link {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+
+    align-self: center;
+}
